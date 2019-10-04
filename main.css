@@ -63,6 +63,25 @@ section:nth-child(even) {
 	justify-content: space-evenly;
 }
 
+.social-list {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	padding: 0;
+	align-items: center;
+	text-align: left;
+}
+.social-list li {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	padding: auto 0;
+}
+
 img {
 	width: 95%;
+}
+
+.social-logo {
+	width: 32px;
 }
