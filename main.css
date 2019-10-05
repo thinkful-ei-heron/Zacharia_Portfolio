@@ -44,10 +44,22 @@ footer {
 header {
 	margin-top: 29px;
 	background-color: white;
+	background-image: url('images/developer.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: 0 18px;
+}
+
+h1 {
+	padding: 20px 0;
+	margin-bottom: 72px;
+}
+h2.hero {
+	margin: 107px 0 12px;;
 }
 
 .hero {
-	background-image: url('images/hero.jpg');
+	color: white;
 }
 
 
