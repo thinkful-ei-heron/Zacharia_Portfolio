@@ -9,15 +9,42 @@ html, body {
 body {
 	display: flex;
 	flex-direction: column;
-	font-family: arial, sans-serif; 
+	font-family: 'Roboto', sans-serif; 
 	font-size: 16px;
 	text-align: center;
-	background-color: rgb(128, 128, 128);
+	background-color: rgb(35, 35, 35);
+	color: #CCC5B8
+}
+
+.serif-type,
+h1,
+section h2 {
+	font-family: 'Roboto Slab', serif;
+}
+
+.mono-type,
+nav,
+section a,
+footer {
+	font-family: 'Roboto Mono', monospace;
+}
+
+.narrow-type,
+h2.hero,
+h3 {
+	font-family: 'Roboto Condensed', sans-serif;
 }
 
 
+
+a {
+	text-decoration: none;
+	color: #D68B00;
+}
+
 nav, footer {
-	background-color: rgb(128, 128, 128);
+	background-color: rgb(35, 35, 35);
+	font-size: 14px;
 }
   
 nav {
@@ -35,68 +62,100 @@ nav {
 	list-style: none;
 	align-items: center;
 	padding: 0;
+	margin: 12px 0;
 }
 
-footer {
-	font-size: 14px;
+nav a {
+	color: #609E7D
+}
+
+nav a.current {
+	color: #7CCCA2;
 }
   
 header {
-	margin-top: 29px;
+	margin-top: 25px;
 	background-color: white;
 	background-image: url('images/developer.jpg');
 	background-repeat: no-repeat;
 	background-size: 100%;
-	background-position: 0 18px;
+	background-position: 0 13px;
+}
+
+h1, h2, h3 {
+	color: rgb(230, 230, 230);
+	text-shadow: 0.5px 0.5px gray
 }
 
 h1 {
-	padding: 20px 0;
+	padding: 11px 0;
 	margin-bottom: 72px;
-}
-h2.hero {
-	margin: 107px 0 12px;;
+	letter-spacing: 1px;
+	color: rgb(245, 245, 245);;	
 }
 
 .hero {
-	color: white;
+	line-height: 1.2;
 }
 
+h2.hero {
+	margin: 120px 0 10px;
+	letter-spacing: 2px;
+}
+
+h3 {
+	letter-spacing: 2px;
+	margin-top: 20px;
+}
 
   
 section {
-	background-color: #bbb;
-	padding: 0 0 10%;
-	line-height: 1.5;
+	background-color: #261D2B;
+	padding: 0 3% 10%;
+	line-height: 1.7;
 }
 
 section:nth-child(even) {
-	background-color: #ddd;
+	background-color: #220D2E;
   }
+
+p {
+	padding: 10px 0;
+	text-align: left;
+}
 
 .project-links {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-around;
 }
 
 img {
 	width: 95%;
 }
 
-
 .contact {
 	display: block;
 	text-align: left;
-	padding-left: 5%;
+	padding: 0 0 0 6%;
+	height: 83vh;
 }
-.contact h2 {
-	text-align: center;
+
+.contact h3 {
+	color: #CCC5B8;
+	text-shadow: none;
+}
+
+.contact-spacer {
+	margin-top: 36px;
 }
 
 .social-list {
 	list-style: none;
 	align-items: center;
 	padding: 0;
+}
+.social-list li {
+	padding: 2px 0;
 }
 
 .social-link {
@@ -106,4 +165,10 @@ img {
 .social-logo {
 	width: 32px;
 	margin-right: 3%;
+}
+
+
+
+.recenter {
+	text-align: center;
 }
