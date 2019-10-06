@@ -35,6 +35,7 @@ h3 {
 
 
 a {
+	cursor: pointer;
 	text-decoration: none;
 	color: #D68B00
 }
@@ -65,10 +66,10 @@ nav a {
 	color: #609E7D
 }
 nav a.current {
-	color: #7CCCA2;
+	color: #80D1A7;
 }
 nav a:hover {
-	color: #7CCCA2;
+	color: #89E0B3;
 }
   
 header {
@@ -102,17 +103,17 @@ h3 {
   
 
 section {
-	padding: 0 3% 6%;
+	padding: 43px 3% 6%;
 	line-height: 1.9;
 }
-section.about {
+section#about {
 	background-color: #CCC5B8;
 	padding-top: 1%;
 }
-section.projects {
+section#projects {
 	background-color: #BDB7AE;
 }
-section.contact {
+section#contact {
 	background-color: #261D2B;
 }
 section p {
@@ -122,12 +123,12 @@ section p {
 }
 
 
+#projects h2 {
+	text-decoration: underline;
+}
 
 .project-links {
 	margin: 48px 10% 56px;
-}
-.projects h2 {
-	text-decoration: underline;
 }
 .project-links a {
 	display: block;
@@ -153,17 +154,17 @@ section p {
 
 
 
-.contact {
+#contact {
 	display: block;
 	text-align: left;
 	height: 86.75vh;
 }
-.contact h2 {
+#contact h2 {
 	color: #CCC5B8;
 	margin: 30px 0 10px;
 	text-decoration: underline;
 }
-.contact h3 {
+#contact h3 {
 	color: #CCC5B8;
 }
 .contact-spacer {
@@ -194,10 +195,10 @@ section p {
 footer {
 	color: #A19B91;
 	margin: 0 auto;
-	width: 320px;
+	width: 365px;
 }
 footer p {
-	margin: 12px auto;
+	margin: 12px auto 14px;
 }
 
 
@@ -225,7 +226,7 @@ footer p {
 	p {
 		max-width: 74%;
 	}
-	.projects p {
+	#projects p {
 		max-width: 55%;
 	}
 
