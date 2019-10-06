@@ -126,6 +126,9 @@ section p {
 .project-links {
 	margin: 48px 10% 56px;
 }
+.projects h2 {
+	text-decoration: underline;
+}
 .project-links a {
 	display: block;
 	border: 2px solid #261D2B;
@@ -158,6 +161,7 @@ section p {
 .contact h2 {
 	color: #CCC5B8;
 	margin: 30px 0 10px;
+	text-decoration: underline;
 }
 .contact h3 {
 	color: #CCC5B8;
@@ -219,10 +223,10 @@ footer p {
 	}
 
 	p {
-		max-width: 80%;
+		max-width: 74%;
 	}
 	.projects p {
-		max-width: 60%;
+		max-width: 55%;
 	}
 
 	.contact-indent {
