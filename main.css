@@ -4,6 +4,7 @@
 
 html, body {
 	margin: 0;
+	padding: 0;
 }
 
 body {
@@ -79,7 +80,7 @@ header {
 	background-image: url('images/developer.jpg');
 	background-repeat: no-repeat;
 	background-size: 100%;
-	background-position: 0 13px;
+	background-position: 0 40%;
 }
 
 h1, h2, h3 {
@@ -98,8 +99,12 @@ h1 {
 	line-height: 1.2;
 }
 
+h2 {
+	padding: 20px 0 14px;
+}
+
 h2.hero {
-	margin: 120px 0 10px;
+	margin: 30% 0 10px;
 	letter-spacing: 2px;
 }
 
@@ -111,7 +116,7 @@ h3 {
   
 section {
 	background-color: #261D2B;
-	padding: 0 3% 10%;
+	padding: 0 3% 12%;
 	line-height: 1.7;
 }
 
