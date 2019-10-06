@@ -130,7 +130,7 @@ section p {
 	display: block;
 	border: 2px solid #261D2B;
 	border-radius: 6px;
-	margin: 8px auto;
+	margin: 10px auto;
 	padding: 2px 0 4px;
 	max-width: 400px;
 }
@@ -190,6 +190,10 @@ section p {
 footer {
 	color: #A19B91;
 	margin: 0 auto;
+	width: 320px;
+}
+footer p {
+	margin: 12px auto;
 }
 
 
@@ -202,6 +206,13 @@ footer {
 
 	header {
 		max-width: 666px;
+	}
+
+	h1 {
+		font-size: 42px;
+	}
+	h2 {
+		font-size: 36px;
 	}
 
 	p {
