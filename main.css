@@ -1,17 +1,15 @@
 * {
 	box-sizing: border-box;
 }
-
 html, body {
 	margin: 0;
 	padding: 0;
 }
-
 body {
 	display: flex;
 	flex-direction: column;
 	font-family: 'Roboto', sans-serif; 
-	font-size: 16px;
+	font-size: 17px;
 	text-align: center;
 	background-color: rgb(25, 25, 25);
 	color: #261D2B;
@@ -22,14 +20,12 @@ h1,
 section h2 {
 	font-family: 'Roboto Slab', serif;
 }
-
 .mono-type,
 nav,
 section a,
 footer {
 	font-family: 'Roboto Mono', monospace;
 }
-
 .narrow-type,
 h2.hero,
 h3 {
@@ -55,52 +51,49 @@ nav {
 	right: 0;
 	z-index: 10;
 }
-
 .btn-nav {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	list-style: none;
 	align-items: center;
 	padding: 0;
-	margin: 12px 0;
+	margin: 12px auto;
+	max-width: 768px;
 }
-
 nav a {
 	color: #609E7D
 }
-
 nav a.current {
+	color: #7CCCA2;
+}
+nav a:hover {
 	color: #7CCCA2;
 }
   
 header {
-	margin-top: 10%;
+	margin: 43px auto 0;
 	background-image: url('images/developer.jpg');
 	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: 0 40%;
+	background-position: center;
+	max-height: 666px;
 }
 
 h1 {
-	margin: 12px 0 72px;
+	margin: 12px 0 256px;
 	letter-spacing: 1px;
 	font-size: 36px;
 	color: rgb(235, 235, 235);
 	text-shadow: 1px 1px gray;
 }
-
 h2 {
-	padding: 2% 0;
-	font-size: 26px;
+	font-size: 28px;
 }
-
 h2.hero {
-	margin: 26% 0 6px;
+	margin-top: 30%;
 	letter-spacing: 2px;
 	color: rgb(220, 220, 220);
 }
-
 h3 {
 	letter-spacing: 2px;
 	margin: 24px 0 9px;
@@ -109,42 +102,38 @@ h3 {
   
 
 section {
-	padding: 0 3% 10%;
-	line-height: 1.7;
+	padding: 0 3% 6%;
+	line-height: 1.9;
 }
-
 section.about {
 	background-color: #CCC5B8;
 	padding-top: 1%;
 }
-
 section.projects {
 	background-color: #BDB7AE;
 }
-
 section.contact {
 	background-color: #261D2B;
 }
-
-section.p {
-	padding: 20px 0 0;
+section p {
+	padding: 22px 1% 8px;
+	margin: 0 auto;
 	text-align: left;
 }
 
 
 
 .project-links {
-	margin: 32px 0 56px;
+	margin: 48px 10% 56px;
 }
-
 .project-links a {
 	display: block;
 	border: 2px solid #261D2B;
 	border-radius: 6px;
-	margin: 8px 12%;
+	margin: 8px auto;
 	padding: 2px 0 4px;
+	max-width: 400px;
 }
-
 .live-link {
 	background-color: #261D2B;
 }
@@ -154,27 +143,30 @@ section.p {
 
 .screenshot {
 	width: 95%;
-	box-shadow: 4px 4px gray;
+	max-width: 480px;
+	box-shadow: 5px 5px gray;
+	margin: 2% auto;
 }
+
+
 
 .contact {
 	display: block;
 	text-align: left;
-	padding-left: 6%;
 	height: 86.75vh;
 }
-
 .contact h2 {
 	color: #CCC5B8;
 	margin: 30px 0 10px;
 }
-
 .contact h3 {
 	color: #CCC5B8;
 }
-
 .contact-spacer {
 	margin-top: 36px;
+}
+.contact-indent {
+	margin-left: 6%;
 }
 
 .social-list {
@@ -183,26 +175,43 @@ section.p {
 	padding: 0;
 }
 .social-list li {
-	padding: 2px 0;
+	padding: 3px 0;
 }
-
 .social-link {
 	padding: 4px 0;
 	display: flex;
 	align-content: center;
 }
-
 .social-logo {
 	width: 32px;
-	margin-right: 3%;
+	margin-right: 4%;
 }
 
 footer {
 	color: #A19B91;
+	margin: 0 auto;
 }
 
 
 
 .recenter {
 	text-align: center;
+}
+
+@media only screen and (min-width: 728px) {
+
+	header {
+		max-width: 666px;
+	}
+
+	p {
+		max-width: 80%;
+	}
+	.projects p {
+		max-width: 60%;
+	}
+
+	.contact-indent {
+		margin-left: 25%;
+	}
 }
