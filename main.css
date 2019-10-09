@@ -44,7 +44,7 @@ footer {
 header {
 	margin-top: 29px;
 	background-color: white;
-	background-image: url('images/developer.jpg');
+	background-image: url('');
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: 0 18px;
@@ -57,17 +57,22 @@ h1 {
 h2.hero {
 	margin: 107px 0 12px;;
 }
-
-.hero {
-	color: white;
-}
-
-
   
 section {
 	background-color: #bbb;
-	padding: 0 0 10%;
-	line-height: 1.5;
+	padding: 43px 3% 6%;
+	line-height: 1.9;
+}
+
+section.about p {
+	padding: 22px 1% 8px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+section.projects p {
+	padding: 22px 1% 8px;
+	margin: 0 auto;
 }
 
 section:nth-child(even) {
@@ -106,4 +111,35 @@ img {
 .social-logo {
 	width: 32px;
 	margin-right: 3%;
+}
+
+
+
+.recenter {
+	text-align: center;
+}
+
+
+
+@media only screen and (min-width: 728px) {
+	h1 {
+		font-size: 42px;
+	}
+	h2 {
+		font-size: 36px;
+	}
+	h3 {
+		font-size: 30px;
+	}
+
+	p {
+		max-width: 74%;
+	}
+	#projects p {
+		max-width: 55%;
+	}
+
+	.contact-indent {
+		margin-left: 25%;
+	}
 }
